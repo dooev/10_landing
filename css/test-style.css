@@ -1,28 +1,58 @@
 /*body START*/
+
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed|Roboto');
-
-body { background-image: url(../img/bg2.png); font-family: 'Roboto', sans-serif; color: #d3d3d3;
-	font-weight:300; font-size:16px;
+body {
+	background-image: url(../img/bg2.png);
+	font-family: 'Roboto', sans-serif;
+	color: #d3d3d3;
+	font-weight: 300;
+	font-size: 16px;
 	-webkit-font-smoothing: antialiased;
-	-webkit-overflow-scrolling: touch;}
+	-webkit-overflow-scrolling: touch;
+}
 
-h1,h2,h3,h4,h5,h6,span { font-family: 'Fira Sans Extra Condensed', sans-serif; color: #e98724;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+	font-family: 'Fira Sans Extra Condensed', sans-serif;
+	color: #e98724;
+}
+
+
 /*body END*/
 
+
 /*nav START*/
-html body div.navbar.navbar-inverse.navbar-fixed-top div.container div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right li a { color:#dfaa38;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    text-decoration: none;
-    font-size: 1.2em;
-		padding-left: 5px; padding-right: 5px;
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>li>a {
+	color: #dfaa38;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	text-decoration: none;
+	font-size: 1.2em;
+	padding-left: 5px;
+	padding-right: 5px;
 }
-html body div.navbar.navbar-inverse.navbar-fixed-top div.container div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right li a:hover {
-color:#e98724; }
+
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: #e98724;
+	background: #222222;
+}
+
+
 /* Эффект Скобки */
-html body div.navbar.navbar-inverse.navbar-fixed-top div.container div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right li a::before,
-html body div.navbar.navbar-inverse.navbar-fixed-top div.container div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right li a::after {
+
+div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right>li>a::before,
+div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right>li>a::after {
 	display: inline-block;
 	opacity: 0;
 	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
@@ -30,14 +60,15 @@ html body div.navbar.navbar-inverse.navbar-fixed-top div.container div.navbar-co
 	transition: transform 0.3s, opacity 0.2s;
 }
 
-html body div.navbar.navbar-inverse.navbar-fixed-top div.container div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right li a::before { margin-right: 10px;
+div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right>li>a::before {
+	margin-right: 10px;
 	content: '[';
 	-webkit-transform: translateX(20px);
 	-moz-transform: translateX(20px);
 	transform: translateX(20px);
 }
 
-html body div.navbar.navbar-inverse.navbar-fixed-top div.container div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right li a::after {
+div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right>li>a::after {
 	margin-left: 10px;
 	content: ']';
 	-webkit-transform: translateX(-20px);
@@ -45,68 +76,217 @@ html body div.navbar.navbar-inverse.navbar-fixed-top div.container div.navbar-co
 	transform: translateX(-20px);
 }
 
-html body div.navbar.navbar-inverse.navbar-fixed-top div.container div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right li a:hover::before,
-html body div.navbar.navbar-inverse.navbar-fixed-top div.container div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right li a:hover::after,
-html body div.navbar.navbar-inverse.navbar-fixed-top div.container div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right li a:focus::before,
-html body div.navbar.navbar-inverse.navbar-fixed-top div.container div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right li a:focus::after {
+div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right>li>a:hover::before,
+div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right>li>a:hover::after,
+div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right>li>a:focus::before,
+div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right>li>a:focus::after {
 	opacity: 1;
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
 	transform: translateX(0px);
 }
 
-.navbar { font-weight: 800; padding-top: 15px; padding-bottom: 15px;}
+.navbar {
+	font-weight: 800;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
 
-.navbar-inverse { border-color: #222222;}
+.navbar-inverse {
+	border-color: #222222;
+}
 
-html body div.navbar.navbar-inverse.navbar-fixed-top div.container div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right li.active a { background-color: #222222; }
+div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right>li.active>a {
+	background-color: #222222;
+}
 
-.navbar-inverse .navbar-brand { color:#e98724; font-weight: bolder; font-size: 1.3em}
-.navbar-inverse .navbar-brand:hover { color:#e98724; }
+.navbar-inverse .navbar-brand {
+	color: #e98724;
+	font-weight: bolder;
+	font-size: 1.3em
+}
+
+.navbar-inverse .navbar-brand:hover {
+	color: #e98724;
+}
+
+
 /*nav END*/
 
+
 /*headerwrap START*/
-.headerwrap {  ;
-	padding-top: 20px; text-align: center; min-height: 500px;
-/* для экранов мобильных (НО! на обычном фон говно получается)
+
+.headerwrap {
+	background: black;
+	background-image: url(../img/header-bg.jpg);
+	background-repeat: no-repeat;
+	padding-top: 20px;
+	text-align: center;
+	min-height: 550px;
+	/* для экранов мобильных (НО! на обычном фон говно получается)*/
 	background-size: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover; */
+	background-position: center;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	*/
 }
-.headerwrap h1 { margin-top: 100px; color: white; font-size: 5em; font-weight: 300;
-	letter-spacing:3px;}
-.headerwrap h2 { color:#dfaa38;  font-size: 3em; font-weight: 300; letter-spacing: 2px;}
+
+.headerwrap h1 {
+	margin-top: 100px;
+	color: white;
+	font-size: 5em;
+	font-weight: 300;
+	letter-spacing: 3px;
+}
+
+.headerwrap h2 {
+	color: #dfaa38;
+	padding-top: 0.5em;
+	font-size: 3em;
+	font-weight: 300;
+	letter-spacing: 2px;
+}
+
+
 /*headerwrap END*/
 
-/*block 1 START*/
-.block-1 { text-align: center; padding: 0 5em 8em ;}
-.block-1 span { color:#e98724;  font-size: 2.2em; pad}
-.block-1 i { color:#dfaa38;  font-size: 2.2em; padding: 1em}
 
-	/*block 1 END*/
+/*block 1 START*/
+
+.block-1 {
+	text-align: center;
+	padding: 0 5em 8em;
+}
+
+.block-1 span {
+	color: #e98724;
+	font-size: 2.2em;
+	pad
+}
+
+.block-1 i {
+	color: #dfaa38;
+	font-size: 2.2em;
+	padding: 1em
+}
+
+
+/*block 1 END*/
+
 
 /*block 2 START*/
-.block-2 { padding-bottom: 8em;  text-align: center; }
-.block-2 h4 { font-size: 3em; margin-bottom: 1.7em;}
-.block-2__block { background: #222222; padding: 2em 0.5em; border-top: 4px solid #dfaa38; border-bottom: 5px solid #1a1a1a; margin: 0 }
+
+.block-2 {
+	padding-bottom: 8em;
+	text-align: center;
+}
+
+.block-2 h4 {
+	font-size: 3em;
+	margin-bottom: 1.7em;
+}
+
+.block-2__block {
+	background: #222222;
+	padding: 2em 0.5em;
+	border-top: 4px solid #e98724;
+	border-bottom: 6px solid #1a1a1a;
+	margin: 1em 0;
+}
+
+
 /*block 2 END*/
 
+
 /*block 3 START*/
-.block-3 { text-align: center; padding-bottom: 7em;}
-.block-3 h4 { font-size: 3em; padding-bottom: 0.8em; padding-top: 0.5em}
-.block-3 span { font-size: 1.5em;	color: white; word-spacing: 1px; letter-spacing: 1px}
+
+.block-3 {
+	text-align: center;
+	padding-bottom: 7em;
+}
+
+.block-3 h4 {
+	font-size: 3em;
+	padding-bottom: 0.8em;
+	padding-top: 0.5em
+}
+
+.block-3 span {
+	font-size: 1.5em;
+	color: white;
+	word-spacing: 1px;
+	letter-spacing: 1px
+}
+
+
 /*block 3 END*/
 
+
 /*footer START*/
-.footer { background: #1a1a1a; padding-top: 1em; padding-bottom: 1em;
-	text-align: center;}
-.footer i { color: white; font-size: 2em; padding: 1em; }
-.footer i:hover { color: #e98724; }
+
+.footer {
+	background: #1a1a1a;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-align: center;
+}
+
+.footer i,
+.footer span {
+	color: white;
+	font-size: 2em;
+	padding: 1em;
+}
+
+.footer i:hover,
+.footer span:hover {
+	color: #e98724;
+}
+
+.footer a {
+	text-decoration: none;
+}
+
 
 /*footer END*/
 
-/*Like START*/
-.like-h1
-/*Like END*/
+
+/*@media START*/
+
+@media (max-width: 977px) {
+	/*headerwrap START*/
+	.headerwrap {
+		background: black;
+		background-image: url(../img/header-bg.jpg);
+		background-repeat: no-repeat;
+		padding-top: 20px;
+		text-align: center;
+		min-height: 450px;
+		background-size: 100%;
+		background-position: center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	.headerwrap h1 {
+		margin-top: 100px;
+		color: white;
+		font-size: 4em;
+		font-weight: 300;
+		letter-spacing: 3px;
+	}
+	.headerwrap h2 {
+		color: #dfaa38;
+		padding-top: 0.5em;
+		font-size: 2.5em;
+		font-weight: 300;
+		letter-spacing: 2px;
+	}
+	/*headerwrap END*/
+}
+
+
+/*@media END*/
