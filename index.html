@@ -125,7 +125,8 @@
 					<h4>Примеры работ</h4>
 					<div class="col-lg-4 col-md-6 col-xs-12 ">
 						<div class="block-2__block">
-							<a href="https://www.fl.ru/users/dooevdima/portfolio/6122550/redizayn-sayta-vtoraya-rabota/">
+							<a href="http://www.pobednov_restyle.cd79138.tmweb.ru
+">
 								<img src="img/example-1.1.png" class="img-responsive">
 							</a>
 							<h3>Сайт расслабляющих практик </h3>
@@ -135,7 +136,7 @@
 					</div>
 					<div class="col-lg-4 col-md-6 col-xs-12">
 						<div class="block-2__block">
-							<a href="https://www.fl.ru/users/dooevdima/portfolio/6122570/verstka-po-psd-maketu-dlya-studii--3ya-rabota-/">
+							<a href="http://www.stikers.cd79138.tmweb.ru/">
 								<img src="img/example-2.1.png" class="img-responsive">
 							</a>
 							<h3>Сайт студии </h3>
@@ -144,7 +145,8 @@
 					</div>
 					<div class="col-lg-4 col-md-6 col-xs-12 col-md-push-3 col-lg-push-0">
 						<div class="block-2__block">
-							<a href="https://www.fl.ru/users/dooevdima/portfolio/6122593/sayt-pro-sobak-dlya-podrugi-5ya-rabota/">
+							<a href="http://www.good_mood.cd79138.tmweb.ru
+">
 								<img src="img/example-3.1.png" class="img-responsive">
 							</a>
 							<h3>Сайт для собаководов </h3>
@@ -179,11 +181,17 @@ Work in a team where I can learn from people with experience and grow as a speci
 		<div class="footer" id="footer">
 			<div class="container">
 				<div class="row centered">
+				<div id="tel">
+					<a href="tel:+79636389955"> +79636389955</a>
+				</div>
+				<div id="mail">
+					<a href="mailto:dooevdima3@gmail.com">dooevdima3@gmail.com</a>
+				</div>
 					<a href="https://vk.com/dooev"><i class="fa fa-vk" aria-hidden="true"></i></a>
 					<a href="https://github.com/dooev"><i class="fa fa-github" aria-hidden="true"></i></a>
 					<a href="https://www.facebook.com/dima.dooev.1"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a href="mailto:dooevdima3@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-					<a href="tel:+79636389955"><i class="fa fa-mobile" aria-hidden="true"></i></a>
+					<i id="show-mail" class="fa fa-envelope" aria-hidden="true"></i>
+					<i id="show-tel" class="fa fa-mobile" aria-hidden="true"></i>
 					<a href="https://www.fl.ru/users/dooevdima/"><span>FL</span></a>
 				</div>
 			</div>
@@ -191,10 +199,35 @@ Work in a team where I can learn from people with experience and grow as a speci
 		<!--footer END-->
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js">
+		<script src="js/bootstrap.min.js"></script>
+<!--		soft scroll START-->
+		<script>$(document).ready(function(){
+    $('a[href^="#"], *[data-href^="#"]').on('click', function(e){
+        e.preventDefault();
+        var t = 1000;
+        var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
+        $('html,body').stop().animate({ scrollTop: $(d).offset().top }, t);
+    });
+});</script>
+<!--		soft scroll END-->
 
+<!--show on click START-->
+<script>
 
+$( "#show-tel" ).click(function() {
+  $( "#tel" ).show( "slow", function() {
+    // Animation complete.
+  });
+});
+
+$( "#show-mail" ).click(function() {
+  $( "#mail" ).show( "slow", function() {
+    // Animation complete.
+  });
+});	
 		</script>
+<!--show on click END-->
+
 	</body>
 
 </html>
