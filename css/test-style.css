@@ -108,7 +108,8 @@ div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right > li.active > a {
 	font-size: 1.3em
 }
 
-.navbar-inverse .navbar-brand:hover {
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
 	color: #e98724;
 }
 
@@ -124,7 +125,6 @@ div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right > li.active > a {
 	padding-top: 20px;
 	text-align: center;
 	min-height: 550px;
-	/* для экранов мобильных (НО! на обычном фон говно получается)*/
 	background-size: 100%;
 	background-position: center;
 	-webkit-background-size: contain;
@@ -157,7 +157,7 @@ div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right > li.active > a {
 
 .block-1 {
 	text-align: center;
-	padding: 0 5em 8em;
+	padding: 0 5em 5em;
 }
 
 .block-1 span {
@@ -170,6 +170,81 @@ div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right > li.active > a {
 	font-size: 2.2em;
 	padding: 1em
 }
+.block-1 .btn { font-size: 1em;}
+.btn-warning {
+	background-color: #dfaa38;
+	color: #222222;
+	border-color: #dfaa38;
+}
+
+.btn-warning:active:focus,
+.btn-warning:active:hover,
+.btn-warning:focus,
+.btn-warning:hover {
+	background-color: #db9b11;
+	color: #222222;
+	border-color: #db9b11;
+
+}
+
+
+
+/* анимация прыгающей руки
+.block-1__btn-show-more i {
+  animation: block-1__jump-hand 7s infinite ease-in-out;
+}
+
+
+@keyframes block-1__jump-hand {
+	0% {
+		-webkit-transform: translateY(0%);
+		transform: translateY(0%);
+		opacity: 1;
+	
+	}
+	10% { 
+		-webkit-transform: translateY(-20%); 
+		transform: translateY(-20%);}
+	
+		20% {
+		-webkit-transform: translateY(0%);
+		transform: translateY(0%);
+	}
+	30% {
+			-webkit-transform: translateY(-20%);
+			transform: translateY(-20%);
+	}
+	40% {
+  	-webkit-transform:translateY(0%);
+  	transform:translateY(0%);
+    
+	}
+	50% {  
+    -webkit-transform:translateY(-20%);  
+    transform:translateY(-20%);  
+	}
+	60% {
+  	-webkit-transform:translateY(0%);
+  	transform:translateY(0%);
+    
+}
+70% {
+	-webkit-transform:translateY(-20%);
+	transform:translateY(-20%);
+}
+80% {
+	-webkit-transform:translateY(0%);
+	transform:translateY(0%);
+	
+}
+
+90% {
+	-webkit-transform:translateY(-20%);
+	transform:translateY(-20%);
+	
+	opacity: 1;
+}
+} */
 
 
 /*block 1 END*/
@@ -302,7 +377,7 @@ div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right > li.active > a {
 	/*@media headerwrap END*/
 	/*@media footer START*/
 	#tel,
-	#mail {
+	#mail, #skils {
 		display: none;
 	}
 }
@@ -323,3 +398,4 @@ div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right > li.active > a {
 /*@media footer END*/
 
 /*@media END*/
+
