@@ -249,14 +249,14 @@ div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right > li.active > a {
 
 /*block 1 END*/
 
-/*block 2 START*/
+/*block 2 & 2.1 START*/
 
-.block-2 {
+.block-2, .block-2_1 {
 	padding-bottom: 8em;
 	text-align: center;
 }
 
-.block-2 h4 {
+.block-2 h4, .block-2_1 h4 {
 	font-size: 3em;
 	margin-bottom: 1.7em;
 }
@@ -269,7 +269,9 @@ div.navbar-collapse.collapse ul.nav.navbar-nav.navbar-right > li.active > a {
 	margin: 1em 0;
 }
 
-
+.block-2_1 img {
+	width: 100%;
+}
 /*block 2 END*/
 
 /*block 3 START*/
